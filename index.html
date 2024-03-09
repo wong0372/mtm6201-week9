@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+    <style>
+      .my-element {
+        animation: jello; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="my-element animate__animated">Week9</h1>
+    </header>
+    <main class="paper container-md">
+      <p class="container-md">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro possimus
+        nobis, inventore fuga delectus accusamus culpa architecto perferendis
+        cumque magnam deleniti odit alias unde blanditiis assumenda, dolorum
+        adipisci vel iusto.
+      </p>
+
+      <div class="row flex-center">
+        <div class="sm-4 col">
+          <div class="card">
+            <img src="https://picsum.photos/768" alt="Card example image" />
+
+            <div class="card-body">
+              <h4 class="card-title">My awesome Paper card!</h4>
+              <h5 class="card-subtitle">Nice looking subtitle.</h5>
+              <p class="card-text">
+                Notice that the card width in this example have been set to
+                20rem, otherwise it will try to fill the current container/row
+                where the card is.
+              </p>
+              <button>Let me go here!</button>
+            </div>
+          </div>
+        </div>
+        <div class="sm-4 col">
+          <div class="card">
+            <img src="https://picsum.photos/768" alt="Card example image" />
+
+            <div class="card-body">
+              <h4 class="card-title">My awesome Paper card!</h4>
+              <h5 class="card-subtitle">Nice looking subtitle.</h5>
+              <p class="card-text">
+                Notice that the card width in this example have been set to
+                20rem, otherwise it will try to fill the current container/row
+                where the card is.
+              </p>
+              <button>Let me go here!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="card" style="width: 20rem">
+        <img src="https://picsum.photos/768" alt="Card example image" />
+
+        <div class="card-body">
+          <h4 class="card-title">My awesome Paper card!</h4>
+          <h5 class="card-subtitle">Nice looking subtitle.</h5>
+          <p class="card-text">
+            Notice that the card width in this example have been set to 20rem,
+            otherwise it will try to fill the current container/row where the
+            card is.
+          </p>
+          <button>Let me go here!</button>
+        </div> -->
+
+      <div data-aos="fade-in"><p>I am a test</p></div>
+      <div data-aos="fade-right"><p>I am a test</p></div>
+      <div data-aos="fade-left"><p>I am a test</p></div>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
